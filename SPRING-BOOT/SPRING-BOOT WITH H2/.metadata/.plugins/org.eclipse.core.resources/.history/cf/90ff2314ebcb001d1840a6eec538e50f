@@ -1,0 +1,11 @@
+package com.example.demoWithH2.model;
+
+import javax.persistence.Entity;
+
+
+
+
+@Entity
+public class employee {
+
+}

@@ -1,0 +1,45 @@
+.form-container {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  fieldset {
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  legend {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    width: 120px;
+    text-align: right;
+    margin-right: 10px;
+  }
+  
+  input[type="text"],
+  input[type="text"]
+   {
+    padding: 5px;
+    font-size: 18px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

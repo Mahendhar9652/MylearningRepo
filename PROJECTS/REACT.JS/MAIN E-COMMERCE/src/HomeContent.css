@@ -1,0 +1,104 @@
+.home-content{
+   display: grid;
+   grid-template-columns: 1fr 1fr  1fr;
+   grid-gap: 50px;
+    position: static;
+    right: 50px;
+    left:50px;
+    top:150px;
+   flex-wrap: wrap;
+    width: 90%;
+    background-color: white;
+    margin: 60px;
+    justify-content: space-around;
+    align-items: center;
+    font-family: monospace;
+
+}
+.content-card{
+    display: grid;
+    grid-template-columns: 1fr; 
+    justify-content: space-between;
+    align-items: center;
+    position: static;
+    left: 40px;
+    box-sizing: border-box;
+    border: 2px solid #ddd;
+    box-shadow: 0 6px 9px rgba(0,0,0,.1);
+    width: 400px;
+    height: 430px;
+}
+
+.content-img{
+    border-radius: 8px;
+    position: relative;
+    left: 60px;
+}
+.content-item-name{
+    color: #6CC5CB;
+    font-size: 18px;
+    margin-top: 40px;
+    margin-left: 20px;
+   
+    
+}
+.content-user{
+    color: black;
+    font-size: 16px;
+    margin-left:-20px;
+   position: relative;
+   top: 20px;
+   z-index: 1;
+}
+.content-name{
+    margin: 5px;
+    color: black;
+    font-size: 16px;
+    position: relative;
+ bottom: 38px;
+ left: 55px; 
+}
+
+.content-price{
+  position: relative;
+  left: 40px;
+  bottom: 40px;
+  font-size: 18px;
+
+}
+.content-addButton{
+    text-decoration: none;
+    background-color: #6CC5CB;
+    color: white;
+    border-radius: 6px;
+    width: 110px;
+    height: 40px;
+    padding-top: 15px;
+    padding-left: 9px;
+    font-size: 16px;
+    position: relative;
+    bottom: 60px;
+    left: 30px;
+
+    border: none;
+    
+}
+
+
+
+.content-buyButton{
+    text-decoration: none;
+    background-color: #6CC5CB;
+    color: white;
+    border-radius: 6px;
+    width: 80px;
+    height: 40px;
+    padding-top: 15px;
+    padding-left: 19px;
+    font-size: 16px;
+    position: relative;
+    bottom: 98px;
+    left: 200px;
+    border: none;
+
+}   
