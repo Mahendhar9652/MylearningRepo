@@ -1,0 +1,36 @@
+package demo;
+
+public class demo {
+
+	public static void main(String[] args) {
+		/*int a =20;
+		System.out.println(a);
+		float  b = 20;
+		System.out.println(b);
+		float d =33.9f;
+		System.out.println(d);
+		int c=(int)d;
+		System.out.println(c);
+		char e ='A';
+		e =66;
+		System.out.println(e);
+		int myInt =9;
+		double myDouble =myInt;
+		System.out.println(myDouble);
+		double mys =9.78f;
+		int ddd =(int)mys;
+		System.out.println(ddd);
+		int a=9, b=9;
+		System.out.println(a+b);
+		System.out.println(a-b);
+		System.out.println(a*b);
+		System.out.println(a/b;
+		System.out.println(a%b);*/	
+		boolean a =true;
+		System.out.println(!a);
+		
+		
+		
+		}
+
+}

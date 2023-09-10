@@ -1,0 +1,12 @@
+package mahi;
+
+public class hello {
+
+	public static void main(String[] args) {
+
+     SmartPhone phone = new Smartphone();
+     System.out.println(phone.getBrand());
+
+	}
+
+}

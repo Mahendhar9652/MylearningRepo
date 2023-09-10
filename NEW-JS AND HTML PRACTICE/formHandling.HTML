@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>form</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <center>
+            <form id="myForm">
+                <legend>Details</legend><br/>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br/>
+        
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required><br/>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br/>
+        
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br/>
+        
+                <label for="color">Favorite Color:</label>
+                <input type="color" id="color" name="color" required><br/>
+        
+                <label for="birthdate">Birthdate:</label>
+                <input type="date" id="birthdate" name="birthdate" required><br/>
+        
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required><br/>
+        
+                <label for="month">Month:</label>
+                <input type="month" id="month" name="month" required><br/>
+        
+                <label for="file">File:</label>
+                <input type="file" id="file" name="file" required><br/>
+        
+                <label for="range">Range:</label>
+                <input type="range" id="range" name="range" min="0" max="100" step="1" value="50" required><br/>
+        
+                <label for="image">Image:</label>
+                <input type="image" id="image" name="image" src="https://via.placeholder.com/150" alt="Submit" width="150" height="150" required><br/>
+        
+                <label>Gender:</label>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required><br/>
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other" required><br/>
+                <label for="other">Other</label>
+        
+                <label>Interests:</label>
+                <select name="interests" multiple><br/>
+                    <option value="sports">Sports</option>
+                    <option value="music">Music</option>
+                    <option value="reading">Reading</option>
+                    <option value="movies">Movies</option>
+                    <option value="travel">Travel</option>
+                </select>
+        
+                <label for="agree">I agree to the terms and conditions</label>
+                <input type="checkbox" id="agree" name="agree" required><br/>
+        
+                <input type="submit" value="Submit"><br/>
+            </form>
+     <div id="display">
+
+     </div>
+
+
+        </center>
+        
+        <script>
+ 
+ const form = document.getElementById('myForm');
+const display = document.getElementById('display');
+const data = {};
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const formData = new FormData(form);
+  formData.forEach((value, key) => {
+    data[key] = value;
+  });
+  console.log(data);
+
+  let displayContent = '';
+  for (const item in data) {
+    displayContent += `<p>${item}: ${data[item]}</p>`;
+  }
+  display.innerHTML = displayContent;
+});
+
+
+   
+
+
+
+        </script>
+    </body>
+</html>

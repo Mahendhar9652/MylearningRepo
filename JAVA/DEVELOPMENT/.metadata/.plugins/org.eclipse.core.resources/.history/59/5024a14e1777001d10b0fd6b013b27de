@@ -1,0 +1,12 @@
+package object;
+
+public class hello {
+
+	public static void main(String[] args) {
+		CAr car = new Car();
+		
+		car.setDoors("Closed");
+		System.out.println(car.getDoors());
+	}
+
+}

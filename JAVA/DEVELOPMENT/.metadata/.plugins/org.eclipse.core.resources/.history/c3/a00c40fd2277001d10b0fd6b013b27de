@@ -1,0 +1,13 @@
+package userinput;
+
+public class App {
+
+	public static void main(String[] args) {
+
+System.out.println("Whats your name");
+Scanner sc = new Scanner(System.in); 
+
+
+}
+
+}

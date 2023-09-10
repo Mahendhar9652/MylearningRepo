@@ -1,0 +1,11 @@
+package deno;
+
+public class demo {
+
+	public static void main(String[] args) {
+		
+		int salary =2500;
+	System.out.println("hello "+salary);
+	}
+
+}

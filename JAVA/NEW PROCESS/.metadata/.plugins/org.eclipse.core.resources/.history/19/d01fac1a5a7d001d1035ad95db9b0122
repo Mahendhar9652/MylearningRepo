@@ -1,0 +1,15 @@
+package deno;
+
+public class demo {
+	public static void addition(int a,int b) {
+		System.out.println("addition method:"(a+b));
+	}
+	
+
+	public static void main(String[] args) {
+		addition(105,10);
+		
+
+	}
+
+}

@@ -1,0 +1,17 @@
+package demo;
+
+public class demo {
+
+	public static void main(String[] args) {
+		int a =20;
+		System.out.println(a);
+		float  b = 20;
+		System.out.println(b);
+		float d =33.9f;
+		System.out.println(d);
+		int c=(float)d;
+		System.out.println(c);
+		
+		}
+
+}

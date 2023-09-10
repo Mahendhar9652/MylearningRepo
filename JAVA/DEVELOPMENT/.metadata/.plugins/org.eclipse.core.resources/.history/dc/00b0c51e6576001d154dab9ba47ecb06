@@ -1,0 +1,10 @@
+package variables;
+
+
+	public static void main(String[] args) {
+	
+for(int var =1 ;var<=100 ;var++) {
+System.out.println(var);
+	}
+
+}

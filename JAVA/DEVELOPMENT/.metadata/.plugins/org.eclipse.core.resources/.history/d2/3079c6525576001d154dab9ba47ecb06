@@ -1,0 +1,12 @@
+package variables;
+
+public class variable {
+
+	public static void main(String[] args) {
+	
+int  Value1 ;
+Value1=1;
+System.out.println(Value1);
+	}
+
+}

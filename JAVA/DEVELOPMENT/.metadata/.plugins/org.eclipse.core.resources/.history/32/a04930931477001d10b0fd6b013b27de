@@ -1,0 +1,11 @@
+package classs;
+
+public class car {
+	private String doors;
+	
+	private String engine;
+	
+	private String driver;
+	private int speed ;
+
+}

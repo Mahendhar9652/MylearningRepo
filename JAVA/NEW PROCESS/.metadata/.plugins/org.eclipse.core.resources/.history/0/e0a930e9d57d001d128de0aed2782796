@@ -1,0 +1,16 @@
+package deno;
+
+public class demo {
+
+
+	public static void main(String[] args) {
+		
+		int[] score = {5,5,5,55,85};
+	
+		System.out.println(score[]);
+		
+		
+
+	}
+
+}

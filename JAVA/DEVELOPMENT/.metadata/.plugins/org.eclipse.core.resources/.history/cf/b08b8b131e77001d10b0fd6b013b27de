@@ -1,0 +1,11 @@
+package mahi;
+
+public class Smartphone {
+private String brand ="samsung";
+
+public String getBrand() {
+	return brand;
+}
+
+	
+}
