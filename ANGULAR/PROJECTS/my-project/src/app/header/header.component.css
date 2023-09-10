@@ -1,0 +1,12 @@
+.header{
+    background:rgb(76, 180, 221);
+    width: 95%;
+    border-radius: 8px;
+    font-size: 40px;
+    padding: 2px;
+    color: white;
+    text-align: center;
+    margin: 5px;
+    position: relative;
+    left: 40px;
+}
