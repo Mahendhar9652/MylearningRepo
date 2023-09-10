@@ -1,0 +1,35 @@
+<html>
+<head>
+</head>
+<body>
+<style>
+#first{
+color:white;
+}
+.one{
+ background:gray;
+}
+</style> 
+
+<div id ="first">
+<h1>MAHI</h1>
+</div>
+<img src="new.png" id="img1"></br>
+
+name:<input type = "text"id ="m" > 
+
+<script>
+x = document.getElementById("first")
+ //x.style.color = ""
+//x.style.border="black 3px solid"
+x.setAttribute('class','one')
+y =document.getElementById("img1")
+y.style.width="1500px"
+y.style.height="700px"
+r=document.getElementById("m")
+console.log(r.getAttribute("value"))
+r.setAttribute('value',"mahi")
+
+</script>
+</body>
+</html>

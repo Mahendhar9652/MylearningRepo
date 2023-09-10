@@ -1,0 +1,45 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+<script type = "text/javascript">
+var balance =10000
+
+var number = prompt("enter the account number")
+
+var amount = prompt("enter a amount to transfer")
+
+var name = prompt("enter account holder name")
+
+var pin = prompt("enter a pin")
+
+if(amount<balance){
+
+balance=balance-amount
+
+alert("deduction successfully")
+
+alert("after deduction :"+balance)
+}
+
+else{
+
+alert("your balance is:"+balance +"entered amount is less than your balance")
+
+}
+
+document.write("<h2><br>TRANSACTION DETAILS:</h2>"+name)
+document.write("<br>Account Number:"+number)
+document.write("<br>Amount:"+amount)
+document.write("<br>Remaining Balance:"+balance)
+document.write("<br>Entered Pin:"+pin)
+</script>
+
+</body>
+
+</html>
+    

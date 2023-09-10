@@ -1,0 +1,88 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    
+}
+h1{
+    margin-left: 20px;
+    border:2px inset;
+    border-width: 20px;
+    border-radius:20px;
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+    font-style: italic;
+    font-variant: bold;
+
+
+}
+h2{
+    padding-left: 40px;
+    margin-top: 20px;
+}
+.hi{
+    ;
+}
+   a:link{
+    font-size: 20px;
+    margin-left: 25px;
+    color: brown;
+
+   }
+   a:hover{
+    color: aqua;
+    font-size: 50px;
+   }
+   a:active{
+    color: black;
+   }
+   a:visited{
+    color: aqua;
+   }
+   .table{
+    border: solid 1px;
+    width: 300px;
+    height: 250px;
+    length: 250px;
+
+
+    
+   }
+   table th{
+    background-color: aqua;
+   }
+   table td:hover{
+    background-color: blue;
+
+   }
+   
+  .nav{
+    background-color: #ccc;
+    margin-top:0px;
+    padding-top:10px;
+    width:700px;
+    position:fixed;
+    top:-0px;
+    display: inline;
+  
+  }
+  .y{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    margin-bottom:20px;
+    margin-top: 20px;
+
+
+
+
+
+
+  }
+  .t{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    margin-bottom: 20px;
+
+  }

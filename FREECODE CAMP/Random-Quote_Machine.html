@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Random Quote Machine</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <style>
+    .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#quote-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.quote {
+  font-size: 36px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.author {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#new-quote-button {
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#new-quote-button:hover {
+  background-color: #3e8e41;
+}
+
+    </style>
+  <body>
+    <div class="container">
+      <div id="quote-container">
+        <p class="quote"></p>
+        <p class="author"></p>
+      </div>
+      <button id="new-quote-button">New Quote</button>
+    </div>
+    
+    <script>
+const container = document.getElementById('quote-container');
+const button = document.getElementById('new-quote-button');
+
+button.addEventListener('click', function() {
+  fetch('https://api.quotable.io/random')
+    .then(response => response.json())
+    .then(data => {
+      container.querySelector('.quote').textContent = data.content;
+      container.querySelector('.author').textContent = data.author;
+    })
+    .catch(error => console.log(error));
+});
+
+    </script>
+  </body>
+</html>

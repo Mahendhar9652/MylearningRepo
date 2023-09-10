@@ -1,0 +1,146 @@
+var ans = "";
+var clear = false;
+var calc = "";
+$(document).ready(function() {
+  $("button").click(function() {
+    var text = $(this).attr("value");
+     if(parseInt(text, 10) == text || text === "." || text === "/" || text === "*" || text === "-" || text === "+" || text === "%") {
+      if(clear === false) {
+        calc += text;
+        $(".textbox").val(calc);
+      } else {
+        calc = text;
+        $(".textbox").val(calc);
+        clear = false;
+      }
+      
+    } if(text === "AC") {
+      calc = "";
+      $(".textbox").val("");
+    } else if(text === "CE") {
+      calc = calc.slice(0, -1);
+      $(".textbox").val(calc);
+    } else if(text === "=") {
+      ans = eval(calc);
+      $(".textbox").val(ans);
+      clear = true;
+    }else if(text === "And") { 
+      calc = $(".textbox").val(); 
+      $(".textbox").val(calc); 
+      clear=false;
+    }
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="calculator">
+  <h1>FreeCodeCamp Calculator</h1>
+  <input type="textbox" class="textbox" readonly>
+  <div class="buttons">
+    <button class="button" value="AC">AC</button>
+    <button class="button" value="CE">CE</button>
+    <button class="button" value="%">%</button>
+    <button class="button" value="/">/</button>
+    <button class="button" value="7">7</button>
+    <button class="button" value="8">8</button>
+    <button class="button" value="9">9</button>
+    <button class="button" value="*">*</button>
+    <button class="button" value="4">4</button>
+    <button class="button" value="5">5</button>
+    <button class="button" value="6">6</button>
+    <button class="button" value="-">-</button>
+    <button class="button" value="1">1</button>
+    <button class="button" value="2">2</button>
+    <button class="button" value="3">3</button>
+    <button class="button" value="+">+</button>
+    <button class="button" value=".">.</button>
+    <button class="button" value="0">0</button>
+    <button class="button" value="And">Ans</button>
+    <button class="button" value="=">=</button>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Oleo+Script);
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #56351E;
+}
+
+h1 {
+  font-family: 'Oleo Script', cursive;
+  margin-top: 10px;
+  color: #F19953;
+}
+
+button {
+  height: 50px;
+  border: none;
+}
+
+.calculator {
+  text-align: center;
+  width: 300px;
+  height: 350px;
+  border-radius: 10px;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #C47335;
+  padding: 5px;
+}
+
+.buttons {
+  width: 275px;
+  text-align: center;
+  margin:10px auto;
+}
+
+.button{
+  float: left;
+  margin: 2px;
+  width: 64.75px;
+  color: #f19953;
+  background: #fff;
+  cursor: pointer;
+}
+
+.textbox {
+  margin-top: 10px;
+  text-align: right;
+  border: none;
+  height: 25px;
+  width: 275px;
+  background-color: #F19953;
+}

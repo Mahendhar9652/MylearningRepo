@@ -1,0 +1,130 @@
+<html>
+<head>
+<title>STOP WATCH</title>
+<style>
+*{
+margin :0;
+padding :0;
+box-sizing:border-box;
+}
+body{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+.container{
+background:linear-gradient(to right ,gray,lightblue,green);
+width:150%;
+padding:90px 0;
+border-radius:10px;
+}
+#timeshow{
+background:black;
+width:90%;
+padding:30px 0;
+font-size:20px;
+text-align:center;
+position:relative;
+transform:translatex(-50%);
+left:50%;
+font-size:35px;
+color:white;
+font-family:Verdana,Geneva,Tahoma,sans-serif;
+border-radius:5px;
+box-shadow:0 0 20px black;
+}
+.buttons{
+display:flex;
+justify-content:space-around;
+margin-top:60px;
+}
+
+.buttons button{
+padding:10px 25px;
+border:none;
+background:white;
+font-size:16px;
+border-radius:5px;
+cursor:pointer;
+}
+</style>
+</head>
+<body>
+<div class ="container">
+<div id ="timeshow">
+00 : 00 : 00 : 000
+</div>
+<div class ="buttons">
+<button id="start">start</button>
+<button id="pause">pause</button>
+<button id="reset">reset</button>
+     </div>
+</div>
+<script>
+let milliseconds= 0,seconds=0,minutes=0,hours=0;
+let timeshow = document.getElementById('timeshow')
+let timeref;
+
+ 
+document.getElementById("start").onclick=function(){
+timeref = setInterval(updateTime,10)
+}
+function updateTime(){
+milliseconds = milliseconds+10;
+if(milliseconds==1000){
+seconds=seconds+1;
+milliseconds=0;
+if(seconds==60){
+minutes= minutes=+1;
+seconds=0;
+if(minutes==0){
+hours=hours+1;
+minutes=0; 
+}
+}
+}
+let h,m,s,ms;
+if(hours<10){
+h='0'+hours
+}
+else{
+h=hours
+}
+if(minutes<10){
+m='0'+minutes
+}
+else{
+m=minutes
+}
+if(seconds<10){
+s = '0'+seconds
+}
+else{
+s= seconds
+}
+if(milliseconds<10){
+ms='0'+milliseconds
+}
+else if(milliseconds<100){
+ms='00'+milliseconds
+}
+else{
+ms=milliseconds
+}
+timeshow.innerHTML='${h}:${m}:${s}:${ms}'
+}
+document.getElementById("pause").onclick=function(){
+clearInterval(timeref)
+}
+document.getElementById('reset').onclick=function(){
+clearInterval(timeref)
+milliseconds
+seconds
+minutes
+hours
+timeshow.innerHtml='00:00:00:00'
+}
+</script>
+</body>
+</html>

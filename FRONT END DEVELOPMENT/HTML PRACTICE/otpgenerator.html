@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>cnd links</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+<!--font-awesome-->
+
+<!--Jquery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<style>
+    form {
+  margin: auto; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height:350px ;
+}
+</style>
+  </head>
+  <body>
+    <div>
+    <form>
+        <h1 class="h3 mb-3 fw-normal"><strong>Otp Generator</strong></h1>
+        <div class="form-floating">
+          <input type="number" class="form-control" id="floatingInput" placeholder="number">
+          <label for="floatingInput">Phone Number</label>
+        </div>
+        <div class="form-floating">
+          <button class="btn btn-primary">OTP SEND</button>
+        </div>
+        <div class="checkbox mb-3">
+          <label>
+            <input type="text" name="otp" id="otp" value="123456" placeholder="OTP"  readonly>
+          </label>
+        </div>
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+        <p class="mt-5 mb-3 text-muted">© 2017–2022</p>
+      </form>
+      </div>
+      <p id="print">your otp</p>
+<script type="text/javascript">
+    const number = document.getElementById("floatingInput");
+    const btn = document.querySelector(".btn");
+    const otpSender = document.getElementById("otp");
+    function generateOTP() {
+  var otp = Math.floor(Math.random() * 100000);
+  otp = otp.toString();
+  return otp;
+} 
+    btn.addEventListener('click', function() {
+     var otp = generateOTP();
+     otpSender.value = otp;
+     alert(otp);
+     document.getElementById("print").innerHTML=otp;
+    });
+      
+</script>
+</body>
+</html>

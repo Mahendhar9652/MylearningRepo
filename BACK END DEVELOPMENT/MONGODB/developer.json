@@ -1,0 +1,139 @@
+[{
+  "_id": {
+    "$oid": "63b5baa23b28cf52eb7ad7f8"
+  },
+  "city": "Kolhapur",
+  "state": "Maharashtra"
+},{
+  "_id": {
+    "$oid": "63b5baa23b28cf52eb7ad7f9"
+  },
+  "city": "Port Blair",
+  "state": "Andaman & Nicobar Islands"
+},{
+  "_id": {
+    "$oid": "63b5baa23b28cf52eb7ad7fa"
+  },
+  "city": "Adilabad",
+  "state": "Andhra Pradesh"
+},{
+  "_id": {
+    "$oid": "63b5baa23b28cf52eb7ad7fb"
+  },
+  "city": "Adoni",
+  "state": "Andhra Pradesh"
+},{
+  "_id": {
+    "$oid": "63b5baa23b28cf52eb7ad7fc"
+  },
+  "city": "Amadalavalasa",
+  "state": "Andhra Pradesh"
+},{
+  "_id": {
+    "$oid": "63b5baa23b28cf52eb7ad7fd"
+  },
+  "city": "Amalapuram",
+  "state": "Andhra Pradesh"
+},{
+  "_id": {
+    "$oid": "63b5baa23b28cf52eb7ad7fe"
+  },
+  "city": "Anakapalle",
+  "state": "Andhra Pradesh"
+},{
+  "_id": {
+    "$oid": "63b5baa23b28cf52eb7ad7ff"
+  },
+  "city": "Anantapur",
+  "state": "Andhra Pradesh"
+},{
+  "_id": {
+    "$oid": "63b5baa23b28cf52eb7ad800"
+  },
+  "city": "Badepalle",
+  "state": "Andhra Pradesh"
+},{
+  "_id": {
+    "$oid": "63b5baa23b28cf52eb7ad801"
+  },
+  "city": "Banganapalle",
+  "state": "Andhra Pradesh"
+},{
+  "_id": {
+    "$oid": "63b5baa23b28cf52eb7ad802"
+  },
+  "city": "Bapatla",
+  "state": "Andhra Pradesh"
+},{
+  "_id": {
+    "$oid": "63b5baa23b28cf52eb7ad803"
+  },
+  "city": "Bellampalle",
+  "state": "Andhra Pradesh"
+},{
+  "_id": {
+    "$oid": "63b5baa23b28cf52eb7ad804"
+  },
+  "city": "Bethamcherla",
+  "state": "Andhra Pradesh"
+},{
+  "_id": {
+    "$oid": "63b5baa23b28cf52eb7ad805"
+  },
+  "city": "Bhadrachalam",
+  "state": "Andhra Pradesh"
+},{
+  "_id": {
+    "$oid": "63b5baa23b28cf52eb7ad806"
+  },
+  "city": "Bhainsa",
+  "state": "Andhra Pradesh"
+},{
+  "_id": {
+    "$oid": "63b5baa23b28cf52eb7ad807"
+  },
+  "city": "Bheemunipatnam",
+  "state": "Andhra Pradesh"
+},{
+  "_id": {
+    "$oid": "63b5baa23b28cf52eb7ad808"
+  },
+  "city": "Bhimavaram",
+  "state": "Andhra Pradesh"
+},{
+  "_id": {
+    "$oid": "63b5baa23b28cf52eb7ad809"
+  },
+  "city": "Bhongir",
+  "state": "Andhra Pradesh"
+},{
+  "_id": {
+    "$oid": "63b5baa23b28cf52eb7ad80a"
+  },
+  "city": "Bobbili",
+  "state": "Andhra Pradesh"
+},{
+  "_id": {
+    "$oid": "63b5baa23b28cf52eb7ad80b"
+  },
+  "city": "Bodhan",
+  "state": "Andhra Pradesh"
+},{
+  "_id": {
+    "$oid": "63b5baa23b28cf52eb7ad80c"
+  },
+  "city": "Chilakaluripet",
+  "state": "Andhra Pradesh"
+},{
+  "_id": {
+    "$oid": "63b5baa23b28cf52eb7ad80d"
+  },
+  "city": "Chirala",
+  "state": "Andhra Pradesh"
+},{
+  "_id": {
+    "$oid": "63b5baa23b28cf52eb7ad80e"
+  },
+  "city": "Chittoor",
+  "state": "Andhra Pradesh"
+}]

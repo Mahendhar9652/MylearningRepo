@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>list</title>
+        <link rel="icon" href="b.jpg">
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            a:link{
+                color:brown
+            }
+            a:active{
+                color: aqua;
+
+            }
+            a:hover{
+                color: blue;
+            }
+            a:visited{
+                color: blueviolet;
+            }
+            * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header>
+            <h1>LISTS</h1>
+        </header>
+     <section>
+        <nav>
+            <ul>
+                <li><a href="#">menu<a/></li>
+                    <li><a href="#">menu<a/></li>
+                        <li><a href="#">menu<a/></li>
+
+            </ul>
+        </nav>
+     </section>
+
+        
+    
+<aside>
+    <table>
+        <tr>
+          <th>Person 1</th>
+          <th>Person 2</th>
+          <th>Person 3</th>
+        </tr>
+        <tr>
+          <td>Emil</td>
+          <td>Tobias</td>
+          <td>Linus</td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td>14</td>
+          <td>10</td>
+        </tr>
+      </table>
+
+</aside>
+    <dl>
+        <dt>MAHI</dt>
+        <dd>MAHENDHAR</dd>
+        <li>MAHESH </li>
+        <li>JAVA </li>
+        <li>JAVASCRIPT</li>
+        <li>PYTHON</li>
+        
+
+    </dl>
+    
+      <table border="10" cellpadding="5" cellspacing='5' bordercolor='white' bgcolor="gray" height="250">
+        <caption>STUDENTS DETAILS</caption>
+        <tr>
+            <th>name</th>
+            <th>roll number</th>
+            <th>marks</th>
+        </tr>
+        <tr>
+            <td >mahi</td>
+            <td>25</td>
+            <td>8</td>
+        </tr>
+
+      </table>
+
+
+<iframe src="" name="i" title="Iframe Example"></iframe>
+<p><a href="ad.MP4" target="i">W3Schools.com</a></p>
+
+
+<iframe>
+    name="i"
+</iframe>
+    <a href="ad.MP4" target="i">video</a>
+    <a href="ad.MP4"  target="blank">menu</a><br>
+    &#128512; &#128516; &#128525; &#128151;<br>
+    <form>
+       
+        <fieldset>
+            <legend>form pratice</legend>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="sate">state</label>
+            <select name="dropdown" id="state">
+                <option value="">telanagna</option>
+                <option value="">telanagna</option>
+                <option value="">telanagna</option>
+                <option value="">telanagna</option>
+                <option value="">telanagna</option>
+            </select><br>
+            <label for="">address</label><br>
+            <textarea name="" id="" cols="30" rows="10">
+    
+            </textarea><br>
+            <label for="gender">gender</label>
+            <input type="radio">male
+            <input type="radio">male <br>
+            <input type="submit" value="submit">
+            <br>
+            <input type="checkbox" name="maths" value="maths" id="">maths
+            <input type="checkbox" name="maths" value="maths" id="">maths
+            <input type="checkbox" name="maths" value="maths" id="">maths
+            <input type="checkbox" name="maths" value="maths" id="">maths <br>
+            <input type="file" name="" />
+        </fieldset>
+
+
+      </form>
+<form action="form.html" method="post">
+  <fieldset>
+    <legend>Personalia:</legend>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+<form action="">
+    <fieldset>
+        <legend>datalist</legend>
+        <input list="browser" name="browsers">
+        <datalist id="browser">
+          <option value="Internet Explorer">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Opera">
+          <option value="Safari">
+        </datalist>
+        <input type="submit">
+    </fieldset>
+</form>
+<form action="">
+    <fieldset>
+        <legend>types </legend>
+            <input type="button">
+<input type="checkbox"><br>
+<input type="color"><br>
+<input type="date"><br>
+<input type="datetime-local"><br>
+<input type="email"><br>
+<input type="file"><br>
+<input type="hidden"><br>
+<input type="image"><br>
+<input type="month"><br>
+<input type="number"><br>
+<input type="password"><br>
+<input type="radio"><br>
+<input type="range"><br>
+<input type="reset"><br>
+<input type="search"><br>
+<input type="submit"><br>
+<input type="tel"><br>
+<input type="text"><br>
+<input type="time"><br>
+<input type="url"><br>
+<input type="week"><br>
+       
+    </fieldset>
+</form>
+
+enter
+<form>
+  <label for="country_code">Country code:</label>
+  <input type="number" id="country_code" name="country_code" pattern="[1-7]{3}" title="Three letter country code"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p><strong>Note:</strong> The pattern attribute of the input tag is not supported in Safari 10 (or earlier).</p>
+
+form action="/action_page.php">
+  <label for="country_code">Country code:</label>
+  <input type="number" id="country_code" name="country_code" pattern="[1-7]{3}" title="Three letter country code"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p><strong>Note:</strong> The pattern attribute of the input tag is not supported in Safari 10 (or earlier).</p>
+
+
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+    Your browser does not support the HTML canvas tag.</canvas>
+    
+    <script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.moveTo(0,0);
+    ctx.lineTo(200,100);
+    ctx.stroke();
+    </script>
+    <br/>
+<svg width="100" height="100">
+    <circle cx="50" cy="50" r="40"
+    stroke="green" stroke-width="4" fill="yellow" />
+  Sorry, your browser does not support inline SVG.
+  </svg><br>
+  <video width="320" height="240" controls>
+    <source src="ad.MP4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+  </video><br>
+
+
+  <video width="320" height="240" controls>
+    <source src="ad.MP4" type="video/mp4">
+    <track src="fgsubtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian">
+  </video><br>
+  <br>
+  <hr>
+  <hr>
+
+
+
+  <div style="text-align:center"> 
+    <button onclick="playPause()">Play/Pause</button> 
+    <button onclick="makeBig()">Big</button>
+    <button onclick="makeSmall()">Small</button>
+    <button onclick="makeNormal()">Normal</button>
+    <br><br>
+    <video id="video1" width="420">
+      <source src="ad.MP4" type="video/mp4">
+      <source src="mov_bbb.ogg" type="video/ogg">
+      Your browser does not support HTML video.
+    </video>
+  </div> 
+  
+  <script> 
+  var myVideo = document.getElementById("video1"); 
+  
+  function playPause() { 
+    if (myVideo.paused) 
+      myVideo.play(); 
+    else 
+      myVideo.pause(); 
+  } 
+  
+  function makeBig() { 
+      myVideo.width = 560; 
+  } 
+  
+  function makeSmall() { 
+      myVideo.width = 320; 
+  } 
+  
+  function makeNormal() { 
+      myVideo.width = 420; 
+  } 
+  </script> 
+  
+  
+
+
+
+    
+
+
+
+
+<h1> hi </h1>
+
+
+
+
+
+
+
+
+
+        <script src="" async defer></script>
+    </body>
+</html>

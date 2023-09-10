@@ -1,0 +1,20 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+var balance =1000
+var amount = prompt("enter a amount to transfer")
+if(amount<balance){
+alert("before deduction:"+balance)
+balance=balance-amount
+alert("deduction successfully")
+alert("after deduction :"+balance)
+}
+else{
+alert("your balance is:"+balance +"entered amount is less than your balance")
+}
+document.write("remainig balance:"+balance)
+</script>
+</body>
+</html>
