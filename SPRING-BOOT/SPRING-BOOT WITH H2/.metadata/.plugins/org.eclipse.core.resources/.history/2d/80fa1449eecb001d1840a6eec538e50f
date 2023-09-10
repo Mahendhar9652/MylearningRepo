@@ -1,0 +1,5 @@
+package com.example.demoWithH2.repository;
+
+public interface EmployeeRespository {
+
+}

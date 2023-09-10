@@ -1,0 +1,186 @@
+import { useNavigate, useLocation } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
+import './Chat.css';
+import Footer from './Footer';
+import ChatRoomImage from './download.jpg';
+
+type UserProfileType = {
+username: string;
+email: string;
+photo: string;
+[key: string]: any; // Allow any additional fields on user profile
+registerData?: any; // Define registerData property (optional)
+};
+
+type Message = {
+[x: string]: any;
+receiverUsername: string;
+receiverPhoto: string;
+message: string;
+senderUsername: string;
+senderPhoto: string;
+senderEmail: string;
+receiverEmail: string;
+};
+
+const Main = () => {
+const location = useLocation();
+const navigate = useNavigate();
+const loginUserEmail = location.state?.user?.email;
+const [allUsers, setAllUsers] = useState<UserProfileType[]>([]);
+const [currentUser, setCurrentUser] = useState<UserProfileType>();
+const [filteredUsers, setFilteredUsers] = useState<UserProfileType[]>([]);
+const [filteredMessages, setFilteredMessages] = useState<Message[]>([]);
+
+
+
+
+const allInOne = async()=>{
+
+
+
+  
+}
+
+
+
+const fetchAllUsers = async () => {
+try {
+const response = await axios.get<{ [key: string]: UserProfileType }>('http://localhost:4000/users');
+const fetchedUsers = Object.values(response.data);
+const data = fetchedUsers.map((items: UserProfileType) => items.registerData);
+setAllUsers(data);
+} catch (error) {
+console.error(error);
+}
+};
+
+const getCurrentUser = () => {
+const currentUserfilter = allUsers.filter((user: UserProfileType) => user.email === loginUserEmail);
+setCurrentUser(currentUserfilter[0]);
+};
+
+const getAllMsgs = async () => {
+try {
+const response = await axios.get<Message[]>('http://localhost:4000/allmsgs');
+const res = Object.values(response.data);
+const data = res.map((items: Message) => items.newMsg);
+const filtered = data.filter(
+(items: Message) =>
+(items.senderUsername === currentUser?.username ||
+items.receiverUsername === currentUser?.username) &&
+items.senderUsername !== currentUser?.username
+);
+setFilteredMessages(filtered);
+} catch (error) {
+console.error(error);
+}
+};
+
+const handleSearchUsers = (event: React.ChangeEvent<HTMLInputElement>) => {
+const value = event.target.value.toLowerCase();
+const filtered = allUsers.filter((user) => user.username.toLowerCase().includes(value));
+setFilteredUsers(filtered);
+};
+
+const handleSearchMessages = (event: React.ChangeEvent<HTMLInputElement>) => {
+const value = event.target.value.toLowerCase();
+const filtered = filteredMessages.filter((message) =>
+message.senderUsername.toLowerCase().includes(value) ||
+message.receiverUsername.toLowerCase().includes(value) ||
+message.message.toLowerCase().includes(value)
+);
+setFilteredMessages(filtered);
+};
+console.log(currentUser);
+
+const currentMsgNaviagte = (dataIndex: number): void => {
+const messageUser = (filteredUsers.length > 0 ? filteredUsers : allUsers)[dataIndex];
+// Navigate to chat room with messageUser
+};
+
+useEffect(() => {
+fetchAllUsers();
+getCurrentUser();
+getAllMsgs();
+}, [loginUserEmail, currentUser]);
+
+  return (
+    <>
+    <div className='chat'>
+      <header>
+        {currentUser ? (
+          <div>
+       <img src={currentUser.photo} height='40' width='60' alt='photo' />
+          <p>{currentUser.username}</p>
+          </div>
+        
+      
+        ) : (
+          <p>Loading user information...</p>
+        )}
+        <div>
+          <i className='fa-solid fa-user-group' style={{ color: '#2f559d' }}></i>
+          <i className='fa-solid fa-message' style={{ color: '#2f559d' }}></i>
+          <i className='fa-solid fa-ellipsis fa-rotate-90' style={{ color: '#2f559d' }}></i>
+        </div>
+      </header>
+      <aside>
+        <div>
+          <h1 className='users-heading'>Users</h1>
+          <input type="search" placeholder="Search users" onChange={handleSearchUsers} />
+        <i className="fa-solid fa-magnifying-glass"></i>
+       <hr></hr>
+        </div>
+
+        {allUsers ? (filteredUsers.length > 0 ? filteredUsers : allUsers).map((user: UserProfileType, index: number) => (
+        <div key={index} onClick={() => currentMsgNaviagte(index)}>
+          <img src={user.photo} height='40' width='60' alt='photo' />
+          <p>{user.username}</p>
+        </div>
+      )
+         
+        ) : (
+          <p>Loading users information...</p>
+        )}
+      </aside>
+     <section>
+      <p>Chats</p>
+      <div>
+          <input type="search" placeholder="Search recent users" onChange={handleSearchMessages} />
+            <i className="fa-solid fa-magnifying-glass"></i>
+          </div>
+         <hr />
+          
+
+
+
+
+
+
+
+
+     </section>
+
+
+    <main>
+    <img src={ChatRoomImage} height='auto' width='1100' alt='chatroom' />
+
+
+
+
+    </main>
+
+
+
+
+
+
+    </div>
+    <Footer />
+    </>
+  );
+};
+
+export default Main;

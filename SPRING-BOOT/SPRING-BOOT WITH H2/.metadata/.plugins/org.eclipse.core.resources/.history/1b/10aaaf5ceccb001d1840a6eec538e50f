@@ -1,0 +1,8 @@
+package com.example.demoWithH2.model;
+
+
+
+@Entity
+public class Employee {
+
+}
