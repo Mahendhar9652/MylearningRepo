@@ -1,0 +1,310 @@
+.container-{
+    font-family: sans-serif;
+    
+}
+.headingIcon-search-cart {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    position: fixed;
+    top:-20px;
+    background-color:white;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    justify-content: space-between;
+  }
+  
+  .home-logo {
+    margin-top: 20px;
+    border-radius: 20px;
+    margin-left: 10px;
+  }
+  
+  .home-heading {
+    font-size: 35px;
+    color: #6CC5CB;
+    margin-left: -10px;
+    position: relative;
+    margin-top: -10px;
+  }
+  
+  .sub-heading {
+    font-size: 18px;
+    margin-left: -120px;
+    margin-top: 50px;
+    color: #6CC5CB;
+  }
+  
+
+  .seller-buy{
+  font-size: 18px;
+  color:#6CC5CB;
+  text-decoration: none;
+  margin-left: 50%; 
+  }
+
+  .signout{
+    margin-left: 20px;
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+   background-color:#6CC5CB;
+   color:white;
+   border: none;
+   border-radius: 8px; 
+  }
+  #cart-icon{
+    font-size: -10px;
+    color:#6CC5CB;
+    margin-left: 70px;
+    
+    
+  }
+  .profile-icon{
+    margin-left:10px;
+    font-size: 29px;
+    color: #6CC5CB;
+  }
+
+  .cart-text{
+    font-size: 25px;
+    margin-left: 10px;
+    color:#6CC5CB;
+    margin-left: 30px;
+  }
+
+  
+  
+  .profile-select {
+    position: absolute;
+    top: 120px;
+    right: 20px;
+    width: 170px;
+    padding: 10px;
+    background-color:#6CC5CB;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 60px;
+  }
+  
+  .profile-select select {
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+  }
+  
+  .profile-select option {
+    font-size: 16px;
+    width:60px;
+      
+  }
+  
+  .profile-select option:hover {
+    background-color: white;
+    color:#6CC5CB;
+  }
+  
+  .op{
+    background-color:white;
+    height: 260px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+  .design{
+    margin-top:130px;
+    background-color:#6CC5CB;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction:column;
+    position: static;
+  }
+
+  .launch{
+    margin-left:200px;
+    font-size: 25px;
+    position: absolute;
+    color: white;
+   margin-top: 100px;
+   order: 1;
+  }
+
+  .home-logo-color{
+    order:2;
+    margin-left: 250px;
+    margin-top: -190px;
+  }
+
+  .delivery-boys{
+    margin-left: 650px;
+    margin-top: -20px;
+  }
+
+  .icons{
+    width: 600px;
+    display: flex;
+    margin-left: 60%;
+     flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: -200px;
+  }
+
+  .icons i{
+    color:white;
+   font-size: 50px;
+   
+  
+  }
+
+  .seller-profile-photo{
+    border-radius: 20px;
+    margin-left: -10px;
+    margin-right: 30px;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .rows {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+   
+    
+
+  }
+  
+  
+  .col{
+    flex: 1;
+    margin-left: 20px;
+    color: white;
+  
+  }
+ 
+  .cols{
+    flex: 1;
+  margin: 35px;
+  margin-top: -20px;
+  
+  
+  }
+
+
+
+
+fieldset{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width:600px;
+  height:auto;
+  margin: 20px;
+  padding: 10px;
+  margin-left: 450px;
+  border-radius: 10px;
+  border: 1px solid #6CC5CB;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 2px 2px white;
+  
+}
+
+legend{
+  font-size: 29px;
+  color: #6CC5CB;
+}
+label{
+  margin-left: -330px;
+  font-size: 19px;
+  margin-top: 60px;
+}
+input{
+  width: 320px;
+  height: 30px;
+  margin-left: 140px;
+  margin-top: -20px;
+}
+
+
+select{
+  margin-left: 140px;
+  width:320px;
+  height: 35px;
+  margin-top: -25px;
+}
+
+select option{
+
+  font-size: 15px;
+}
+
+
+.submit-seller{
+  margin: 9px;
+  width: 140px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  background-color: #6CC5CB;
+  color: white;
+  font-size: 19px;
+  margin-top: 30px;
+
+}
+
+.submit-seller :hover{
+  background-color: rgba(94, 99, 173, 0.336);
+}
+
+
+.error{
+  background-color: white;
+  color: red;
+}
+
+
+
+
+
+  .seller-benefits-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin: 20px;
+    grid-gap:50px;
+  
+    margin-bottom: -800px;
+  }
+  
+  .seller-benefit {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .seller-benefit-icon {
+    font-size: 4rem;
+    margin-right: 1rem;
+    color:#6CC5CB;
+  }
+  
+  .seller-benefit-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  

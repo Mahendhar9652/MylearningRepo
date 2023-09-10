@@ -1,0 +1,42 @@
+.container {
+    width: 50%;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .get-data-button {
+    padding: 10px 20px;
+    background-color: lightgray;
+    border: 1px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .data-wrapper {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .data-container {
+    width: 80%;
+    margin: 10px;
+    padding: 20px;
+    background-color: lightgray;
+    border-radius: 5px;
+    text-align: left;
+  }
+  
+  .data-password {
+    margin-bottom: 10px;
+  }
+  
+  .data-username {
+    font-weight: bold;
+  }
+   
+  .audio {
+    width:260px;
+  }
+  

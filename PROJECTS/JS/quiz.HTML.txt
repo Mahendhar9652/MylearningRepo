@@ -1,0 +1,76 @@
+
+<html>
+<head>
+	<title>Quiz App</title>
+</head>
+<body>
+	<h1>Quiz App</h1>
+	<p id="question"></p>
+	<button id="btnTrue">True</button>
+	<button id="btnFalse">False</button>
+	<p id="score">Score: 0</p>
+
+	<script>
+
+
+const quizData = [
+	{
+		question: "Is JavaScript a programming language?",
+		answer: true
+	},
+	{
+		question: "Is the sky purple?",
+		answer: false
+	},
+	{
+		question: "Is HTML a programming language?",
+		answer: false
+	},
+	{
+		question: "Are dogs mammals?",
+		answer: true
+	}
+];
+
+const questionElement = document.getElementById("question");
+const btnTrue = document.getElementById("btnTrue");
+const btnFalse = document.getElementById("btnFalse");
+const scoreElement = document.getElementById("score");
+
+let currentQuestion = 0;
+let score = 0;
+
+loadQuestion();
+
+btnTrue.addEventListener("click", () => {
+	checkAnswer(true);
+});
+
+btnFalse.addEventListener("click", () => {
+	checkAnswer(false);
+});
+
+function loadQuestion() {
+	questionElement.innerText = quizData[currentQuestion].question;
+}
+
+function checkAnswer(answer) {
+	if (answer === quizData[currentQuestion].answer) {
+		score++;
+		scoreElement.innerText = "Score: " + score;
+	}
+
+	currentQuestion++;
+
+	if (currentQuestion < quizData.length) {
+		loadQuestion();
+	} else {
+		alert("Quiz completed. Your score is " + score + " out of " + quizData.length);
+		location.reload();
+	}
+}
+
+
+</script>
+</body>
+</html>

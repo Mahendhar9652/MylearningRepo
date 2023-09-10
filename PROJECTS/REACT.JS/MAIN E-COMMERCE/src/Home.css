@@ -1,0 +1,309 @@
+.container-{
+  font-family: sans-serif;
+  
+}
+.headingIcon-search-cart {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  position: sticky;
+  top:-2px;
+  z-index: 2;
+  background-color:white;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+
+.home-logo {
+  margin-top: 20px;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+
+.home-heading {
+  font-size: 35px;
+  color: #6CC5CB;
+  margin-left: -10px;
+  position: relative;
+  margin-top: -10px;
+}
+
+.sub-heading {
+  font-size: 18px;
+  margin-left: -120px;
+  margin-top: 50px;
+  color: #6CC5CB;
+}
+
+.search-home {
+  border-radius: 8px;
+  width: 40%;
+  height: 50px;
+  border: 1px solid #6CC5CB;
+  margin-left: 50px;
+  position: relative;
+  font-size: 20px;
+  outline: none;
+  cursor: pointer;
+}
+
+.icon-search {
+  position: absolute;
+  right: 680px;
+  top: 48%;
+  right: 600px;
+  width: 60px;
+  font-size: 25px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.seller-home{
+font-size: 15px;
+color:#6CC5CB;
+text-decoration: none;
+margin-left: -10px; 
+}
+
+.signout{
+  margin-left: 2px;
+  width: 100px;
+  height: 40px;
+  font-size: 18px;
+ background-color:#6CC5CB;
+ color:white;
+ border: none;
+ border-radius: 8px; 
+}
+#cart-icon{
+  font-size: 30px;
+  color:#6CC5CB;
+  margin-left: 4px;
+  z-index: 1;
+  
+  
+}
+#profile-icon{
+  margin-left: 40px;
+  font-size: 25px;
+  color: #6CC5CB;
+  position: relative;
+}
+.profile-photo{
+  position: relative;
+  border-radius: 20px;
+  margin-left: 40px;
+
+}
+
+.cart-text{
+  font-size: 25px;
+  margin-left: 10px;
+  color:#6CC5CB;
+}
+
+
+
+.profile-select {
+  position: relative;
+  width: 170px;
+  padding: 10px;
+  background-color:#6CC5CB;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-left: 60px;
+  margin-top: -10px;
+}
+
+.profile-select select {
+  width: 100%;
+  height: 30px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: blue;
+}
+
+.profile-select option {
+  font-size: 16px;
+  width:60px;
+  
+  
+    
+}
+
+.profile-select option:hover {
+  background-color: white;
+  color:#6CC5CB;
+}
+
+.op{
+  background-color:white;
+  height: 260px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.design{
+  margin-top:130px;
+  background-color:#6CC5CB;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction:column;
+  position: static;
+}
+
+.launch{
+  margin-left:200px;
+  font-size: 25px;
+  position: absolute;
+  color: white;
+ margin-top: 100px;
+ order: 1;
+}
+
+.home-logo-color{
+  order:2;
+  margin-left: 250px;
+  margin-top: -190px;
+}
+
+.delivery-boys{
+  margin-left: 650px;
+  margin-top: -20px;
+}
+
+.icons{
+  width: 600px;
+  display: flex;
+  margin-left: 60%;
+   flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: -200px;
+}
+
+.icons i{
+  color:white;
+ font-size: 50px;
+ 
+
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rows {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+ 
+  
+
+}
+
+
+.col{
+  flex: 1;
+  margin-left: 20px;
+  color: white;
+
+}
+
+.cols{
+  flex: 1;
+margin: 35px;
+margin-top: -20px;
+
+
+}
+
+
+
+.seller-benefits-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin: 20px;
+  grid-gap:50px;
+
+  margin-bottom: -800px;
+}
+
+.seller-benefit {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.seller-benefit-icon {
+  font-size: 4rem;
+  margin-right: 1rem;
+  color:#6CC5CB;
+}
+
+.seller-benefit-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.home-cart-count{
+  z-index: 3;
+  position: absolute;
+  top: 30px;
+  right: 210px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color:#6CC5CB;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  color: #ddd;;
+  }
+
+
+    
+
+  .home-suggestions {
+    position: absolute; /* Position the suggestion list */
+    left: 350px;
+    top:90px;
+    z-index: 1; /* Ensure the suggestion list is on top */
+    background-color: #f9f9f9; /* Set the background color */
+    list-style: none; /* Remove the default bullet points */
+    padding: 0; /* Remove any padding */
+    margin: 0; /* Remove any margin */
+    border-top: none; /* Remove the top border */
+    width: 600px;
+  
+  }
+  
+  .home-suggestions li {
+    border: 2px solid #ddd; /* Add a border */
+    border-radius: 8px;
+    width: 100%; /* Set the width to 100% */
+    padding: 10px 20px; /* Add padding */
+    cursor: pointer; /* Change the cursor to a pointer */
+  }
+  
+  .home-suggestions li:hover {
+    background-color: #6CC5CB; /* Add a hover effect */
+  }
+  
+  /* Style the active item */
+  .home-suggestions li.active {
+    background-color:#6CC5CB;
+    color: white;
+  }
+  
