@@ -1,0 +1,42 @@
+package com.example.demo.controller;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.demo.Entity.Employees;
+import com.example.demo.repository.EmployeeRepository;
+
+
+@RestController
+@RequestMapping("/")
+public class Controller {
+ 
+	@Autowired
+	EmployeeRepository employeeRepository;
+	
+	@GetMapping
+	public String Welcome() {
+		return "welcome to my Page";
+	}
+	
+	
+	
+	@PostMapping("/addemp")
+	public Employees saveEmp(@RequestBody Employees employee){
+		return employeeRepository.save(employee);
+		
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+}
