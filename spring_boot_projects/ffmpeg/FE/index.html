@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>API Connection Status</title>
+</head>
+<body>
+
+<h1 id="status">Checking connection...</h1>
+
+<script>
+    // Function to check the connection status
+    function checkConnection() {
+        fetch('http://localhost:8080/upload/message')
+            .then(response => {
+                if (response.ok) {
+                    // Connection successful
+                    document.getElementById('status').innerText = 'Connected successfully!';
+                } else {
+                    // Connection failed
+                    document.getElementById('status').innerText = 'Connection failed!';
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                document.getElementById('status').innerText = 'Connection failed!';
+            });
+    }
+
+    // Call the function on page load
+    window.onload = checkConnection;
+</script>
+
+</body>
+</html>

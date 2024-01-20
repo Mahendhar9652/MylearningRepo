@@ -1,0 +1,19 @@
+@()
+
+@main("Welcome to Play") {
+<form method="POST" action="@routes.t.processForm()">
+ <legend>Enter your task</legend>
+
+ <input type="text" placeholder="Enter" name="item">
+
+ <input type="submit" value="Add">
+</form>
+
+@if(flash.contains("success")) {
+<p class="success">@flash.get("success")</p>
+}
+
+@if(flash.contains("error")) {
+<p class="error">@flash.get("error")</p>
+}
+}

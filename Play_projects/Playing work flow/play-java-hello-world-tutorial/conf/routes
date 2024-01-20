@@ -1,0 +1,4 @@
+GET  /  controllers.HomeController.index(name:String)
+GET  /  controllers.HomeController.session()
+
+GET /user/home   controllers.HomeController.navigate()

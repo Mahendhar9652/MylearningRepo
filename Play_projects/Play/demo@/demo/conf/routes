@@ -1,0 +1,7 @@
+
+
+
+GET     /tasks                  controllers.TaskController.index()
+POST    /tasks                  controllers.TaskController.create()
+POST    /tasks/:id/toggle       controllers.TaskController.toggleTask(id: Long)
+POST    /tasks/:id/delete       controllers.TaskController.deleteTask(id: Long)

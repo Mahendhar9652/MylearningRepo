@@ -1,0 +1,3 @@
+GET  /  controllers.HomeController.index(name:String)
+
+GET /user/home   controllers.HomeController.navigate()
